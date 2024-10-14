@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".FragmentSignIn">
 
     <FrameLayout
@@ -71,6 +72,76 @@
              android:textSize="14sp"
              android:layout_gravity="center_horizontal"
              android:layout_marginTop="20dp"/>
+            <EditText
+                android:id="@+id/TextField1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:padding="12dp"
+                android:textColor="#A1A4B2"
+                android:textSize="16sp"
+                android:background="@drawable/grey_textfield"
+                android:layout_margin="16dp" />
+            <EditText
+                android:id="@+id/TextField2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:padding="12dp"
+                android:textColor="#A1A4B2"
+                android:textSize="16sp"
+                android:background="@drawable/grey_textfield"
+                android:layout_margin="16dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/textV2"
+                android:background="@drawable/button"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/login"
+                android:textColor="@color/white">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already_have_an_account"
+                    />
+
+                <TextView
+                    android:id="@+id/needHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onNeedHelpClick" />
+            </LinearLayout>
+
+
         </LinearLayout>
 
 </FrameLayout>
