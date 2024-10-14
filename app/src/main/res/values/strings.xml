@@ -6,4 +6,7 @@
     <string name="login">Login</string>
     <string name="sign_in">SIGN IN?</string>
     <string name="already_have_an_account">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="i_have_read_the">I have read the.</string>
+    <string name="get_satrted">GET SATRTED</string>
 </resources>
