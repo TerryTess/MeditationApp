@@ -3,8 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="blue">#8E97FD</color>
     <color name="bluer">#7583CA</color>
+    <color name="bluee">#8589EB</color>
     <color name="white">#FFFFFFFF</color>
     <color name="whiter">#FAF8F5</color>
     <color name="grey">#A1A4B2</color>
     <color name="greyey">#F2F3F7</color>
+    <color name="yellow">#FFECCC</color>
 </resources>
