@@ -195,17 +195,32 @@
                     android:layout_height="55dp"
                     android:src="@drawable/bigcloud"
                     android:layout_gravity="top|end"
-                    android:layout_marginTop="40dp"
-                    />
+                    android:layout_marginTop="40dp"/>
             </FrameLayout>
 
-            <!-- Image Below the Girl Image -->
-            <ImageView
-                android:id="@+id/image_below"
+            <!-- FrameLayout for Image Below the Girl Image and Button -->
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/rectangle"
-                 />
+                android:layout_height="match_parent"> <!-- Change height if necessary -->
+
+                <!-- Image Below the Girl Image -->
+                <ImageView
+                    android:id="@+id/image_below"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rectangle" />
+
+                <!-- Button Overlaid on the Image -->
+                <Button
+                    android:id="@+id/my_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GET STARTED"
+                    android:textColor="@color/button"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"/> <!-- Centering the button -->
+            </FrameLayout>
         </LinearLayout>
 
 
