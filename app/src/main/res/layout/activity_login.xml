@@ -53,16 +53,38 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"/>
-            <com.google.android.material.button.MaterialButton
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CONTINUE WITH GOOGLE"
-                android:textSize="14sp"
-                android:textColor="@color/black"
-                android:backgroundTint="@color/white"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_margin="16dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="12dp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/google_icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up with Facebook"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="12dp" />
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Email Address"
                 android:padding="12dp"
-                android:textColor="#A1A4B2"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:background="@drawable/grey_textfield"
                 android:layout_margin="16dp" />
@@ -88,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Password"
                 android:padding="12dp"
-                android:textColor="#A1A4B2"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:background="@drawable/grey_textfield"
                 android:layout_margin="16dp" />
@@ -114,6 +136,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,5 +168,13 @@
         </LinearLayout>
 
     </FrameLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
