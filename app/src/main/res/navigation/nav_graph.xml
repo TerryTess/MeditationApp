@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/SignInUpFragment">
+
+    <fragment
+        android:id="@+id/SignInUpFragment"
+        android:name="com.example.meditationapp.fragments.SplashFragment"
+        android:label="Sign up in"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_SignInUpFragment_to_FragmentSignIn"
+            app:destination="@id/FragmentSignIn" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FragmentSignIn"
+        android:name="com.example.meditationapp.fragments.FragmentSignIn"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_FragmentSignIn_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.example.meditationapp.fragments.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/WelcomeFragment"
+        android:name="com.example.meditationapp.fragments.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome" />
+
+</navigation>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SignUpInFragment">
+    tools:context=".activities.SplashActivity">
 
     <ImageView
         android:id="@+id/backgroundImage"
@@ -83,18 +83,18 @@
         app:layout_constraintTop_toBottomOf="@id/textV1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-<androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/signinupbutton"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/textV2"
-    android:background="@drawable/button"
-    android:layout_marginRight="20dp"
-    android:layout_marginLeft="20dp"
-    android:text="SIGN UP"
-    android:textColor="@color/white">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textV2"
+        android:background="@drawable/button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="NEXT"
+        android:textColor="@color/white">
 
-</androidx.appcompat.widget.AppCompatButton>
+    </androidx.appcompat.widget.AppCompatButton>
 
 
 

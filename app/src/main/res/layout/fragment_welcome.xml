@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bluee"
-    tools:context=".WelcomeFragment">
+    tools:context=".fragments.WelcomeFragment">
 
-    <!-- Horizontal LinearLayout at the top -->
     <LinearLayout
         android:id="@+id/linearlayout1"
         android:layout_width="wrap_content"
@@ -222,7 +221,6 @@
                     android:layout_margin="20dp"/> <!-- Centering the button -->
             </FrameLayout>
         </LinearLayout>
-
 
     </FrameLayout>
 
