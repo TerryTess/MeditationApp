@@ -168,26 +168,46 @@
             android:src="@drawable/circle4"
             android:layout_gravity="center" />
 
-        <FrameLayout
-            android:layout_width="430dp"
-            android:layout_height="258dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
             android:layout_gravity="center">
 
+            <!-- FrameLayout for Girl Image and Cloud -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="258dp">
+
+                <!-- Girl Image (Base Image) -->
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/girl" />
+
+                <!-- Bigcloud Image (Top-Right of Girl Image) -->
+                <ImageView
+                    android:id="@+id/bigcloud"
+                    android:layout_width="114dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/bigcloud"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="40dp"
+                    />
+            </FrameLayout>
+
+            <!-- Image Below the Girl Image -->
             <ImageView
-                android:id="@+id/image6"
+                android:id="@+id/image_below"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/girl" />
+                android:src="@drawable/rectangle"
+                 />
+        </LinearLayout>
 
-            <!-- Bigcloud Image (Top-Right of Girl Image) -->
-            <ImageView
-                android:id="@+id/bigcloud"
-                android:layout_width="114dp"
-                android:layout_height="55dp"
-                android:src="@drawable/bigcloud"
-                android:layout_gravity="top|end"
-                android:layout_marginRight="10dp" />
-        </FrameLayout>
 
     </FrameLayout>
 
