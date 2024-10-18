@@ -13,4 +13,8 @@
     <color name="grey">#A1A4B2</color>
     <color name="greyey">#F2F3F7</color>
     <color name="yellow">#FFECCC</color>
+    <color name="yellower">#FFCF86</color>
+    <color name="red">#FA6E5A</color>
+    <color name="orange">#FEB18F</color>
+    <color name="green">#6CB28E</color>
 </resources>
