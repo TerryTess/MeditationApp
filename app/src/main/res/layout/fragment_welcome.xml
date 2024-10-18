@@ -175,19 +175,16 @@
             android:layout_marginTop="40dp"
             android:layout_gravity="center">
 
-            <!-- FrameLayout for Girl Image and Cloud -->
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="258dp">
 
-                <!-- Girl Image (Base Image) -->
                 <ImageView
                     android:id="@+id/image6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/girl" />
 
-                <!-- Bigcloud Image (Top-Right of Girl Image) -->
                 <ImageView
                     android:id="@+id/bigcloud"
                     android:layout_width="114dp"
@@ -209,16 +206,15 @@
                     android:layout_height="match_parent"
                     android:src="@drawable/rectangle" />
 
-                <!-- Button Overlaid on the Image -->
                 <Button
-                    android:id="@+id/my_button"
+                    android:id="@+id/getstartedbtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="GET STARTED"
                     android:textColor="@color/button"
                     android:backgroundTint="@color/white"
                     android:layout_gravity="center"
-                    android:layout_margin="20dp"/> <!-- Centering the button -->
+                    android:layout_margin="20dp"/>
             </FrameLayout>
         </LinearLayout>
 

@@ -33,7 +33,9 @@ class MainActivity : AppCompatActivity() {
     private fun navigateToFragment(fragment: String) {
         when (fragment) {
             "welcomeFragment" -> navController.navigate(R.id.welcomeFragment)
+            "fragmentTopics" -> navController.navigate(R.id.fragmentTopics)
             else -> {
+
                 // Handle any other fragments (if added in the future)
             }
         }

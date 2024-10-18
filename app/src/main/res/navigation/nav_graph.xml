@@ -4,9 +4,17 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/welcomeFragment">
 
-    <!-- Welcome Fragment -->
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.example.meditationapp.fragments.WelcomeFragment"
-        android:label="Welcome" />
+        android:label="Welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_fragmentTopics"
+            app:destination="@id/fragmentTopics" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTopics"
+        android:name="com.example.meditationapp.fragments.FragmentTopics"
+        android:label="Topics" />
 </navigation>

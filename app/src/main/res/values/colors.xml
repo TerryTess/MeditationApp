@@ -8,6 +8,7 @@
     <color name="circle1">#949DFF</color>
     <color name="circle3">#9EA6FF</color>
     <color name="rectangle">#8C96FF</color>
+    <color name="purple">#808AFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="whiter">#FAF8F5</color>
     <color name="grey">#A1A4B2</color>
@@ -16,5 +17,6 @@
     <color name="yellower">#FFCF86</color>
     <color name="red">#FA6E5A</color>
     <color name="orange">#FEB18F</color>
+    <color name="maroon">#D9A5B5</color>
     <color name="green">#6CB28E</color>
 </resources>
