@@ -19,7 +19,6 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout using View Binding
         _binding = FragmentWelcomeBinding.inflate(inflater, container, false)
         return binding.root
     }
