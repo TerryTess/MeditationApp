@@ -26,7 +26,6 @@ class WelcomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Navigate to FragmentTopics when the button is clicked
         binding.getstartedbtn.setOnClickListener {
             findNavController().navigate(R.id.action_welcomeFragment_to_fragmentTopics)
         }
@@ -34,7 +33,6 @@ class WelcomeFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        // Avoid memory leaks by nullifying the binding reference
         _binding = null
     }
 }

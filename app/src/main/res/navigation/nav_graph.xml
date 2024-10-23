@@ -16,5 +16,14 @@
     <fragment
         android:id="@+id/fragmentTopics"
         android:name="com.example.meditationapp.fragments.FragmentTopics"
-        android:label="Topics" />
+        android:label="Topics">
+        <action
+            android:id="@+id/action_fragmentTopics_to_fragmentMediWelcome"
+            app:destination="@id/fragmentMediWelcome" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentMediWelcome"
+        android:name="com.example.meditationapp.fragments.FragmentMediWelcome"
+        android:label="Meditation Welcome" />
 </navigation>
