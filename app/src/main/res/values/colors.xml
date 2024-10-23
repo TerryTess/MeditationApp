@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="blacker">#253334</color>
     <color name="button">#3F414E</color>
     <color name="blue">#8E97FD</color>
     <color name="bluer">#7583CA</color>
