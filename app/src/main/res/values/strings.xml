@@ -16,4 +16,8 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="start">Start</string>
     <string name="proceed">PROCEED</string>
+    <string name="anxious">Anxious</string>
+    <string name="focus">Focus</string>
+    <string name="relax">Relax</string>
+    <string name="calm">Calm</string>
 </resources>
