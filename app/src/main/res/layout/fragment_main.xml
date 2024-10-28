@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
        >
 
         <ImageView
@@ -70,7 +70,7 @@
             android:id="@+id/constraint2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintTop_toBottomOf="@+id/texxtt"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -199,7 +199,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.cardview.widget.CardView
-        android:id="@+id/carrd"
+        android:id="@+id/ccarrd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/constraint2"
@@ -213,7 +213,6 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
-            <!-- Vertical LinearLayout with TextViews -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -221,7 +220,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/ttext"
+                    android:id="@+id/tteext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Meditation 101"
@@ -238,7 +237,6 @@
                     android:gravity="start"
                     android:layout_marginTop="8dp" />
 
-                <!-- Button with Image/Icon -->
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -250,7 +248,6 @@
                 android:drawablePadding="8dp" />
             </LinearLayout>
 
-            <!-- Image beside the Vertical LinearLayout -->
             <ImageView
                 android:layout_width="166dp"
                 android:layout_height="130dp"
@@ -264,7 +261,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/constraint2"
         app:cardCornerRadius="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:elevation="4dp">
 
         <LinearLayout
@@ -273,7 +270,6 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
-            <!-- Vertical LinearLayout with TextViews -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -298,7 +294,6 @@
                     android:gravity="start"
                     android:layout_marginTop="8dp" />
 
-                <!-- Button with Image/Icon -->
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -310,7 +305,6 @@
                 android:drawablePadding="8dp" />
             </LinearLayout>
 
-            <!-- Image beside the Vertical LinearLayout -->
             <ImageView
                 android:layout_width="166dp"
                 android:layout_height="130dp"
@@ -326,7 +320,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/carrd"
         app:cardCornerRadius="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:elevation="4dp">
 
         <LinearLayout
@@ -372,7 +366,6 @@
                     android:drawablePadding="8dp" />
             </LinearLayout>
 
-            <!-- Image beside the Vertical LinearLayout -->
             <ImageView
                 android:layout_width="129dp"
                 android:layout_height="129dp"
@@ -381,6 +374,16 @@
                 android:contentDescription="Meditation Image" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:layout_marginTop="16dp"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 
