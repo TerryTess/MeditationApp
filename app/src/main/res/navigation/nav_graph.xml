@@ -25,5 +25,15 @@
     <fragment
         android:id="@+id/fragmentMediWelcome"
         android:name="com.example.meditationapp.fragments.FragmentMediWelcome"
-        android:label="Meditation Welcome" />
+        android:label="Meditation Welcome">
+        <action
+            android:id="@+id/action_fragmentMediWelcome_to_fragmentMain"
+            app:destination="@id/fragmentMain" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.example.meditationapp.fragments.FragmentMain"
+        android:label="Meditation Main" />
+
 </navigation>
