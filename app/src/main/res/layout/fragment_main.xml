@@ -77,8 +77,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView1"
-                android:layout_width="40dp"
-                android:layout_height="44dp"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
                 app:cardBackgroundColor="@android:color/transparent"
                 app:cardCornerRadius="24dp"
                 android:layout_marginEnd="8dp"
@@ -108,8 +108,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView2"
-                android:layout_width="40dp"
-                android:layout_height="44dp"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
                 app:cardBackgroundColor="@android:color/transparent"
                 app:cardCornerRadius="24dp"
                 android:layout_marginStart="16dp"
@@ -139,8 +139,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView3"
-                android:layout_width="40dp"
-                android:layout_height="44dp"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
                 app:cardBackgroundColor="@android:color/transparent"
                 app:cardCornerRadius="24dp"
                 android:layout_marginStart="16dp"
@@ -169,8 +169,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView4"
-                android:layout_width="40dp"
-                android:layout_height="44dp"
+                android:layout_width="60dp"
+                android:layout_height="64dp"
                 app:cardBackgroundColor="@android:color/transparent"
                 app:cardCornerRadius="24dp"
                 android:layout_marginStart="16dp"
@@ -199,63 +199,6 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.cardview.widget.CardView
-        android:id="@+id/ccarrd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/constraint2"
-        app:cardCornerRadius="24dp"
-        android:layout_marginTop="16dp"
-        android:elevation="4dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/tteext"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Meditation 101"
-                    android:textSize="25sp"
-                    android:textColor="@color/black"
-                    android:gravity="start" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Techniques, Benefits, and a Beginner’s How-To"
-                    android:textSize="15sp"
-                    android:textColor="@color/black"
-                    android:gravity="start"
-                    android:layout_marginTop="8dp" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:backgroundTint="@color/black"
-                    android:text="Watch Now"
-                    android:textColor="@color/white"
-                    android:drawableEnd="@drawable/play_arrow"
-                android:drawablePadding="8dp" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="166dp"
-                android:layout_height="130dp"
-                android:src="@drawable/bigcard1"
-                android:layout_gravity="center_vertical"
-                android:contentDescription="Meditation Image" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
         android:id="@+id/carrd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -268,7 +211,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="16dp">
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -292,12 +235,12 @@
                     android:textSize="15sp"
                     android:textColor="@color/black"
                     android:gravity="start"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="5dp" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
+                    android:layout_marginTop="5dp"
                     android:backgroundTint="@color/black"
                     android:text="Watch Now"
                     android:textColor="@color/white"
@@ -306,8 +249,8 @@
             </LinearLayout>
 
             <ImageView
-                android:layout_width="166dp"
-                android:layout_height="130dp"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:src="@drawable/bigcard1"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="Meditation Image" />
@@ -320,7 +263,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/carrd"
         app:cardCornerRadius="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:elevation="4dp">
 
         <LinearLayout
@@ -329,7 +272,6 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
-            <!-- Vertical LinearLayout with TextViews -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -374,6 +316,7 @@
                 android:contentDescription="Meditation Image" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
@@ -384,7 +327,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
