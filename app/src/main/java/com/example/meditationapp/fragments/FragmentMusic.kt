@@ -9,16 +9,10 @@ import com.example.meditationapp.R
 
 
 class FragmentMusic : Fragment() {
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_music, container, false)
     }
-
-
 }
